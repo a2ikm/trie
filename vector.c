@@ -31,7 +31,7 @@ void vector_resize(Vector *v) {
 }
 
 void vector_add(Vector *v, unsigned int index, int value) {
-  if (index + 1 >= v->n) {
+  if (index + 1 >= v->len) {
     vector_resize(v);
   }
   for (unsigned int i = v->n; i > index; i--) {
